@@ -1,12 +1,9 @@
 <launch>
-    <!-- 啟動 cut_pliers_controller 節點 -->
-    <node
-        pkg="cut_pliers_controller" type="cut_pliers_controller" name="cut_pliers_controller" output="screen">
-        
-        <!-- 可選參數，根據您的程式需求設置 -->
-        <param name="rate" type="int" value="100" />  <!-- 節點執行頻率 -->
-        <param name="port" type="string" value="/dev/ttyUSB0" /> <!-- 串口端口名稱 -->
-        <param name="baudrate" type="int" value="115200" /> <!-- 串口波特率 -->
+    <param name="serial_port" value="/dev/ttyUSB0" />
+    <param name="baud_rate" value="115200" />
 
+    <node pkg="cut_pliers_controller" type="test_node" name="cut_pliers_controller" output="screen">
+        <param name="serial_port" value="/dev/ttyUSB0" />
+        <param name="baud_rate" value="115200" />
     </node>
 </launch>

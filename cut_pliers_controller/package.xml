@@ -5,30 +5,28 @@
   <description>The cut_pliers_controller package</description>
 
   <maintainer email="meteor@todo.todo">meteor</maintainer>
+  <license>MIT</license>
 
-  <license>TODO</license>
-
+  <!-- 主要的相依性，包含 message_runtime -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>package</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>serial</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>nav_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>custom_msgs</build_depend>
+  <build_depend>message_runtime</build_depend>  <!-- 新增這行 -->
 
-  <build_export_depend>serial</build_export_depend>
-  <build_export_depend>package</build_export_depend>
-  <build_export_depend>roscpp</build_export_depend>
-  <build_export_depend>rospy</build_export_depend>
-  <build_export_depend>std_msgs</build_export_depend>
-  <build_export_depend>nav_msgs</build_export_depend>
-
+  <!-- 執行時的相依性，包含 message_runtime -->
   <exec_depend>serial</exec_depend>
-  <exec_depend>package</exec_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>custom_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>  <!-- 新增這行 -->
 
   <export>
   </export>
